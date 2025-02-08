@@ -1,0 +1,4 @@
+A 로 Checkout 후에 B로 Cherry_pick 하면
+A  -> B(new) 로 새로운 커밋이 생김. 기존의 B 커밋은 남아있음.
+
+즉, A에서 B로 Cherry_pick을하면 A는 움직이지 않음. (기준이 됨)
