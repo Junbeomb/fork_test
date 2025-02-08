@@ -8,3 +8,7 @@ Merge
 	B의 파일들이 A의 Staging 영역으로 올라감
 		fast_forward 이면 staging 생략
 		conflict 가 한 파일이라도 나면 staging 거치고 직접 commit 해야함.
+
+즉 Cherrt_Pick는 합치는게 아닌 복사해서 기준 브랜치에 합쳐서 커밋을 해줌.
+	tree가 A(기준 브랜치) 에서 커밋하나가 더 늘어남.
+	Merge는 기준 브랜치와 Merge 하는 브랜치에 같은 Commit이 하나 생김.
