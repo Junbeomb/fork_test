@@ -1,0 +1,14 @@
+Cherry_Pick
+	A 로 Checkout 후에 B우클릭 후 Cherry_pick 하면
+	A  -> B(new) 로 새로운 커밋이 생김. 기존의 B 커밋은 남아있음.
+	즉, A에서 B로 Cherry_pick을하면 A는 움직이지 않음. (기준이 됨)
+
+Merge
+	A로 Checkout 후에 B를 우클릭후 Merge 하면
+	B의 파일들이 A의 Staging 영역으로 올라감
+		fast_forward 이면 staging 생략
+		conflict 가 한 파일이라도 나면 staging 거치고 직접 commit 해야함.
+
+즉 Cherrt_Pick는 합치는게 아닌 복사해서 기준 브랜치에 합쳐서 커밋을 해줌.
+	tree가 A(기준 브랜치) 에서 커밋하나가 더 늘어남.
+	Merge는 기준 브랜치와 Merge 하는 브랜치에 같은 Commit이 하나 생김.
