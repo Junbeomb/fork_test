@@ -1,4 +1,10 @@
-A 로 Checkout 후에 B로 Cherry_pick 하면
-A  -> B(new) 로 새로운 커밋이 생김. 기존의 B 커밋은 남아있음.
+Cherry_Pick
+	A 로 Checkout 후에 B우클릭 후 Cherry_pick 하면
+	A  -> B(new) 로 새로운 커밋이 생김. 기존의 B 커밋은 남아있음.
+	즉, A에서 B로 Cherry_pick을하면 A는 움직이지 않음. (기준이 됨)
 
-즉, A에서 B로 Cherry_pick을하면 A는 움직이지 않음. (기준이 됨)
+Merge
+	A로 Checkout 후에 B를 우클릭후 Merge 하면
+	B의 파일들이 A의 Staging 영역으로 올라감
+		fast_forward 이면 staging 생략
+		conflict 가 한 파일이라도 나면 staging 거치고 직접 commit 해야함.
